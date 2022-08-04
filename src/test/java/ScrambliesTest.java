@@ -1,12 +1,10 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
-
-public class ScrambliesTest {
+class ScrambliesTest {
     private final Scramblies scramblies = new Scramblies();
 
     @Test
-    public void shouldCheckString() {
+    void shouldCheckString() {
         boolean output = scramblies.scramble("scriptjavx","javascript");
 
         System.out.println(Character.getNumericValue('z'));

@@ -1,15 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.*;
-
-public class StepsTest {
+class StepsTest {
     private final Steps steps = new Steps();
 
     @Test
-    public void shouldFindAllPossibleSteps() {
+    void shouldFindAllPossibleSteps() {
         // given
         long numberOfSteps = 5;
         long[] allowed = {1,2,3,4,5}; // -> 1111 22 112 121 211

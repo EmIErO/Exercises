@@ -1,16 +1,17 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BumpingCarTest {
-    private final BumpingCar bumpingCar = new BumpingCar();
+class BumpingCarTest {
 
+    private BumpingCar bumpingCar = new BumpingCar();
     @Test
-    public void shouldCountBumps() {
+    void shouldCountBumps() {
         String input = "____nn____nn";
 
         String output = bumpingCar.bumps(input);
         long X = Long.MAX_VALUE;
+
         assertEquals(output, "Whooo!");
     }
 }

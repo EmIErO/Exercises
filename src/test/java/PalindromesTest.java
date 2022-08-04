@@ -1,12 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PalindromesTest {
+class PalindromesTest {
     private final Palindromes palindromes = new Palindromes();
 
     @Test
-    public void shouldFindLongestPalindrome() {
+    void shouldFindLongestPalindrome() {
         String phrase = "asdfgvcvcxz";
         int outcome = palindromes.longestPalindrome(phrase);
 

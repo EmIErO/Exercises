@@ -1,12 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SillyAddingTest {
+class SillyAddingTest {
     private final SillyAdding sillyAdding = new SillyAdding();
 
     @Test
-    public void shouldCalculate() {
+    void shouldCalculate() {
         int first = 19;
         int second = 3235;
 
@@ -17,7 +17,7 @@ public class SillyAddingTest {
     }
 
     @Test
-    public void shouldCalculateFourDigits() {
+    void shouldCalculateFourDigits() {
         int first = 122;
         int second = 81;
 
@@ -28,7 +28,7 @@ public class SillyAddingTest {
     }
 
     @Test
-    public void shouldCalculateForSameNumberOfDigits() {
+    void shouldCalculateForSameNumberOfDigits() {
         int first = 19;
         int second = 11;
 

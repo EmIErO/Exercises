@@ -1,12 +1,12 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CamelCaseSolverTest {
+class CamelCaseSolverTest {
     private final CamelCaseSolver solver = new CamelCaseSolver();
 
     @Test
-    public void shouldConvertCamelCase() {
+    void shouldConvertCamelCase() {
         // given
         String phrase = "inCamelCase";
 
@@ -19,7 +19,7 @@ public class CamelCaseSolverTest {
     }
 
     @Test
-    public void shouldNotConvertSingleWord() {
+    void shouldNotConvertSingleWord() {
         // given
         String phrase = "interpreter";
 
@@ -32,7 +32,7 @@ public class CamelCaseSolverTest {
     }
 
     @Test
-    public void shouldReplaceGivenRegex() {
+    void shouldReplaceGivenRegex() {
         // given
         String phrase = "inCamel1ertw";
 

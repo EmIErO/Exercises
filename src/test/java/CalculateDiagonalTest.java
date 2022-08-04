@@ -1,12 +1,13 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculateDiagonalTest {
+
+class CalculateDiagonalTest {
     private final CalculateDiagonal calculateDiagonal = new CalculateDiagonal();
 
     @Test
-    public void shouldCalculateDiagonal() {
+    void shouldCalculateDiagonal() {
         double expected = calculateDiagonal.execute(1, 1);
         assertEquals(expected, 1.4142, 1);
     }
